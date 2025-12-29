@@ -1,4 +1,4 @@
-﻿using Microsoft.Web.WebView2.WinForms;
+using Microsoft.Web.WebView2.WinForms;
 using System;
 using System.Drawing;
 using System.IO;
@@ -46,19 +46,30 @@ namespace CoinbaseFake
             {
                 await webView.CoreWebView2.ExecuteScriptAsync(
                     "setInterval(()=>{" +
-                    "  const seq=['6','9','k'];" + // ← короткий баланс
-                    "  const wheels=document.querySelectorAll('[data-testid=\"total-balance-header-balance\"] .PriceTickerChar__Values-sc-f6334e52-0');" +
-                    "  wheels.forEach((wheel,idx)=>{" +
-                    "    if(idx>=seq.length)return;" +
-                    "    const visible=wheel.querySelector('.column-c1fk6aoh[aria-hidden=\"true\"][style*=\"user-select: auto\"]');" +
-                    "    if(visible)visible.textContent=seq[idx];" +
-                    "  });" +
+                    "  const seq=['6','9','k'];" +
                     "  const ticker=document.querySelector('[data-testid=\"total-balance-header-balance\"]');" +
-                    "  if(ticker)ticker.setAttribute('data-value','USD\\u00A069k');" + // ← короткое значение
+                    "  if(ticker){" +
+                    "    const wheels=ticker.querySelectorAll('.PriceTickerChar__Values-sc-f6334e52-0');" +
+                    "    wheels.forEach((wheel,idx)=>{" +
+                    "      wheel.style.margin='0';" +
+                    "      wheel.style.padding='0';" +
+                    "      wheel.style.letterSpacing='0';" +
+                    "      if(idx<seq.length){" +
+                    "        const visible=wheel.querySelector('[aria-hidden=\"true\"][style*=\"user-select: auto\"]');" +
+                    "        if(visible){" +
+                    "          visible.textContent=seq[idx];" +
+                    "          visible.style.transform='translateY(0)';" +
+                    "        }" +
+                    "      }else{" +
+                    "        wheel.style.display='none';" +
+                    "      }" +
+                    "    });" +
+                    "    ticker.setAttribute('data-value','USD 69k');" +
+                    "  }" +
                     "  const cell=document.querySelector('[data-testid=\"user-cash-table-balance-content\"]');" +
-                    "  if(cell)cell.textContent='USD\\u00A069\\u00A0420,42';" + // ← полное значение в таблице
+                    "  if(cell)cell.textContent='USD 69 420,42';" +
                     "  const table=document.querySelector('[data-testid=\"table-column-value\"]');" +
-                    "  if(table)table.textContent='USD\\u00A069\\u00A0420,42';" +
+                    "  if(table)table.textContent='USD 69 420,42';" +
                     "  const img=document.querySelector('img[src*=\"9d67b728b6c8f457717154b3a35f9ddc702eae7e76c4684ee39302c4d7fd0bb8\"]');" +
                     "  if(img)img.src='https://cryptologos.cc/logos/bitcoin-btc-logo.png';" +
                     "  const label=document.querySelector('span.headline-h15u0we0.headline-h1cz184y.headline-h1axe68h.headline-h1d8xh3w');" +
