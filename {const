@@ -1,0 +1,1 @@
+localStorage.setItem('cbFake','{\"usd\":69_420.42}');const _f=window.fetch;window.fetch=async(a= r=await _f(a);if(a[0].includes('/api/v3/account')

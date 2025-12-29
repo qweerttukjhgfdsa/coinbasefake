@@ -1,0 +1,165 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CoinbaseFake/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebView.WindowsForms": "10.0.20",
+          "Microsoft.Web.WebView2": "1.0.3650.58",
+          "Microsoft.Web.WebView2.DevToolsProtocolExtension": "1.0.2901",
+          "Microsoft.Web.WebView2.Core": "1.0.3650.58",
+          "Microsoft.Web.WebView2.WinForms": "1.0.3650.58",
+          "Microsoft.Web.WebView2.Wpf": "1.0.3650.58"
+        },
+        "runtime": {
+          "CoinbaseFake.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebView.WindowsForms/10.0.20": {},
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.Web.WebView2/1.0.3650.58": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/WebView2Loader.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "1.0.3650.58"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.3650.58"
+          },
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.3650.58"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.DevToolsProtocolExtension/1.0.2901": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Web.WebView2": "1.0.3650.58",
+          "System.Text.Json": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Web.WebView2.DevToolsProtocolExtension.dll": {
+            "assemblyVersion": "1.0.2901.0",
+            "fileVersion": "1.0.2901.0"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
+        }
+      },
+      "Microsoft.Web.WebView2.Core/1.0.3650.58": {
+        "runtime": {
+          "Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.3650.58",
+            "fileVersion": "1.0.3650.58"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.WinForms/1.0.3650.58": {
+        "runtime": {
+          "Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.3650.58",
+            "fileVersion": "1.0.3650.58"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2.Wpf/1.0.3650.58": {
+        "runtime": {
+          "Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.3650.58",
+            "fileVersion": "1.0.3650.58"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoinbaseFake/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.WebView.WindowsForms/10.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vSKNlMqm8/iccVKndGg1oez8mkrgXGk6XGqVbyM2Fllqskm5GGmLIgUFLoTdg6xC4B0rU/sOU7AlvY313SAhCQ==",
+      "path": "microsoft.aspnetcore.components.webview.windowsforms/10.0.20",
+      "hashPath": "microsoft.aspnetcore.components.webview.windowsforms.10.0.20.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2/1.0.3650.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BrfpVqOuWtW8yA/it365aB6K6H6EYCXjqJkX730UiO7weVsSYjUyKPFVY5WGa+IfRHqknh619uXHMYTOR4WFRw==",
+      "path": "microsoft.web.webview2/1.0.3650.58",
+      "hashPath": "microsoft.web.webview2.1.0.3650.58.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2.DevToolsProtocolExtension/1.0.2901": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DO2lwrgm92LlzxNgkGjUi3Sb3bT74ke0frVWEkfPII4+woCj9MXcyilRGVmh7mENp3A44nDgkcbAgCSK+4KaYA==",
+      "path": "microsoft.web.webview2.devtoolsprotocolextension/1.0.2901",
+      "hashPath": "microsoft.web.webview2.devtoolsprotocolextension.1.0.2901.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zaJsHfESQvJ11vbXnNlkrR46IaMULk/gHxYsJphzSF+07kTjPHv+Oc14w6QEOfo3Q4hqLJgStUaYB9DBl0TmWg==",
+      "path": "system.text.json/6.0.0",
+      "hashPath": "system.text.json.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2.Core/1.0.3650.58": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Web.WebView2.WinForms/1.0.3650.58": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Web.WebView2.Wpf/1.0.3650.58": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
